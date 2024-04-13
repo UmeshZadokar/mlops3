@@ -9,6 +9,7 @@ import string
 import random
 import json
 import re
+import pandas
 import time
 import argparse
 import zipfile
@@ -79,7 +80,8 @@ def check_intr():
         bann_text()
         mesgdcrt.FailureMessage("Poor internet connection detected")
         sys.exit(2)
-
+    def get_inputs():  
+        pass
 
 def format_phone(num):
     num = [n for n in num if n in string.digits]
